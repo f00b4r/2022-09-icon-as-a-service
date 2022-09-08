@@ -1,0 +1,22 @@
+{
+    "name": "iaas",
+    "routes": [
+      {
+        "src": "/fa/s/(?<icon>[\\w\\-]+)(:?/(?<size>\\d{2,3})/?)?(:?/(?<color>\\w{6})/?)?(:?/)?",
+        "dest": "/api/index?vendor=fontawesome&spec=solid&icon=$icon&size=$size&color=$color"
+      },
+      {
+        "src": "/fa/r/(?<icon>[\\w\\-]+)(:?/(?<size>\\d{2,3})/?)?(:?/(?<color>\\w{6})/?)?(:?/)?",
+        "dest": "/api/index?vendor=fontawesome&spec=regular&icon=$icon&size=$size&color=$color"
+      },
+      {
+        "src": "/fa/b/(?<icon>[\\w\\-]+)(:?/(?<size>\\d{2,3})/?)?(:?/(?<color>\\w{6})/?)?(:?/)?",
+        "dest": "/api/index?vendor=fontawesome&spec=brands&icon=$icon&size=$size&color=$color"
+      },
+      {
+        "src": "/",
+        "dest": "/api/index"
+      }
+    ]
+  }
+  
